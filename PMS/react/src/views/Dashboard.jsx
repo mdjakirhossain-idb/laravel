@@ -75,7 +75,7 @@ const Dashboard = () => {
                                     {statistics.earnings
                                         ? statistics.earnings
                                         : 0}
-                                    SP
+                                    TK
                                 </p>
                             </div>
                         </div>

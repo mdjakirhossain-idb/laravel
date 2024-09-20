@@ -45,7 +45,7 @@ const Notification = ({ t, i18n }) => {
                         value={i18n.language}
                     >
                         <option value="en">EN</option>
-                        <option value="ar">AR</option>
+                        {/* <option value="ar">AR</option> */}
                     </select>
                 </div>
             </div>

@@ -55,7 +55,7 @@ const Sidebar = ({ t, i18n }) => {
                             className="items-center gap-3 mx-2 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
                         >
                             <SiShopware style={{ color: currentColor }} />{" "}
-                            <span style={{ color: currentColor }}>PMS</span>
+                            <span style={{ color: currentColor }}>Pharmacy Management System</span>
                         </Link>
                         <TooltipComponent
                             content="Menu"

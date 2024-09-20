@@ -74,14 +74,14 @@ const Navbar = () => {
             />
             {/* Notifications Button */}
             <div className="flex">
-                <NavButton
+                {/* <NavButton
                     title="Language"
                     // dotColor="#03C9D7"
                     customFunc={() => handleClick("notification")}
                     color={currentColor}
                     icon={<SiGoogletranslate />}
                     className="ml-8"
-                />
+                /> */}
                 {/* UserProfile */}
                 <TooltipComponent content="Profile" position="BottomCenter">
                     <div
@@ -96,7 +96,7 @@ const Navbar = () => {
                         <p>
                             <span className="text-gray-400 text-14">Hi, </span>{" "}
                             <span className="text-gray-400  font-bold ml-1 text-14">
-                                Majd
+                                Jakir
                             </span>
                         </p>
                         <MdKeyboardArrowDown className="text-gray-400 text-14" />
