@@ -12,7 +12,7 @@
                 class="c-sidebar-brand d-lg-down-none"
                 style="background: #894b9d"
             >
-                <span class="ml-2 font-weight-bold">APLIKASI KASIR</span>
+                <span class="ml-2 font-weight-bold">Point Of Sale</span>
             </div>
 
             <!-- sidebar -->
@@ -31,8 +31,8 @@
 
                 <footer class="c-footer">
                     <div>
-                        <strong>APLIKASI KASIR</strong> &copy; 2022 -
-                        SantriKoding.com.
+                        <!-- <strong>APLIKASI KASIR</strong> &copy; 2022 -
+                        SantriKoding.com. -->
                     </div>
                 </footer>
             </div>

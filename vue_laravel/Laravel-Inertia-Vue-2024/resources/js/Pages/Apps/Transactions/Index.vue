@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Transactions - Aplikasi Kasir</title>
+        <title>Transactions - Point Of Sale</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">
@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label fw-bold"
-                                        >Harga</label
+                                        >price</label
                                     >
                                     <input
                                         type="number"
@@ -96,7 +96,7 @@
                                     </div>
                                     <div class="col-md-8 col-8 text-end">
                                         <h4 class="fw-bold">
-                                            Rp. {{ formatPrice(grandTotal) }}
+                                            TK. {{ formatPrice(grandTotal) }}
                                         </h4>
                                         <div v-if="change > 0">
                                             <hr />
@@ -165,7 +165,7 @@
                                             </td>
                                             <td>{{ cart.product.title }}</td>
                                             <td>
-                                                Rp.
+                                                TK.
                                                 {{
                                                     formatPrice(
                                                         cart.product.sell_price
@@ -176,7 +176,7 @@
                                                 {{ cart.qty }}
                                             </td>
                                             <td class="text-end">
-                                                Rp.
+                                                TK.
                                                 {{ formatPrice(cart.price) }}
                                             </td>
                                         </tr>
@@ -196,7 +196,7 @@
                                                     background-color: #e6e6e7;
                                                 "
                                             >
-                                                Rp.
+                                                TK.
                                                 {{ formatPrice(carts_total) }}
                                             </td>
                                         </tr>
@@ -207,7 +207,7 @@
                                     class="d-flex align-items-end flex-column bd-highlight mb-3"
                                 >
                                     <div class="mt-auto bd-highlight">
-                                        <label>Discount (Rp.)</label>
+                                        <label>Discount (TK.)</label>
                                         <input
                                             type="number"
                                             v-model="discount"
@@ -217,7 +217,7 @@
                                         />
                                     </div>
                                     <div class="bd-highlight mt-4">
-                                        <label>Pay (Rp.)</label>
+                                        <label>Pay (TK.)</label>
                                         <input
                                             type="number"
                                             v-model="cash"

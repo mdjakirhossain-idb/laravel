@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Report Sales - Aplikasi Kasir</title>
+        <title>Report Sales - Point Of Sale</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">
@@ -128,7 +128,7 @@
                                                     }}
                                                 </td>
                                                 <td class="text-end">
-                                                    Rp.
+                                                    TK.
                                                     {{
                                                         formatPrice(
                                                             sale.grand_total
@@ -152,7 +152,7 @@
                                                         background-color: #e6e6e7;
                                                     "
                                                 >
-                                                    Rp. {{ formatPrice(total) }}
+                                                    TK. {{ formatPrice(total) }}
                                                 </td>
                                             </tr>
                                         </tbody>

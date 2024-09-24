@@ -1,12 +1,12 @@
 <template>
     <Head>
-        <title>Update Password - Aplikasi Kasir</title>
+        <title>Update Password - Point Of Sale</title>
     </Head>
     <div class="col-md-4">
         <div class="fade-in">
             <div class="text-center mb-4">
                 <a href="" class="text-dark text-decoration-none">
-                    <h3 class="mt-2 font-weight-bold">APLIKASI KASIR</h3>
+                    <h3 class="mt-2 font-weight-bold">Point Of Sale</h3>
                 </a>
             </div>
             <div class="card-group">

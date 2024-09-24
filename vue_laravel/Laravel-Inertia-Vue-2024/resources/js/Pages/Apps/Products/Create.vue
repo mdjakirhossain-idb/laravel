@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Add New Product - Aplikasi Kasir</title>
+        <title>Add New Product - Point Of Sale</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">
@@ -13,7 +13,7 @@
                             <div class="card-header">
                                 <span class="font-weight-bold"
                                     ><i class="fa fa-shopping-bag"></i> ADD NEW
-                                    PRODUCT</span
+                                    Purchese</span
                                 >
                             </div>
                             <div class="card-body">
@@ -226,7 +226,7 @@
                                                 {{
                                                     form.isSubmitting
                                                         ? "Processing..."
-                                                        : "Simpan"
+                                                        : "Submit"
                                                 }}
                                             </button>
                                             <button

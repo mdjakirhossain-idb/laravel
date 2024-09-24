@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Edit Product - Aplikasi Kasir</title>
+        <title>Edit Product - Point Of Sale</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">
@@ -13,7 +13,7 @@
                             <div class="card-header">
                                 <span class="font-weight-bold"
                                     ><i class="fa fa-shopping-bag"></i> EDIT
-                                    PRODUCT</span
+                                    Purchese</span
                                 >
                             </div>
                             <div class="card-body">

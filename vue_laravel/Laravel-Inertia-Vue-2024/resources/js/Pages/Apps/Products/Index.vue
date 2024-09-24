@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Products - Aplikasi Kasir</title>
+        <title>Products - Point Of Sale</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">
@@ -13,7 +13,7 @@
                             <div class="card-header">
                                 <span class="font-weight-bold"
                                     ><i class="fa fa-shopping-bag"></i>
-                                    PRODUCTS</span
+                                    </span
                                 >
                             </div>
                             <div class="card-body">
@@ -76,7 +76,7 @@
                                             </td>
                                             <td>{{ product.title }}</td>
                                             <td>
-                                                Rp.
+                                                TK.
                                                 {{
                                                     formatPrice(
                                                         product.buy_price
@@ -84,7 +84,7 @@
                                                 }}
                                             </td>
                                             <td>
-                                                Rp.
+                                                TK.
                                                 {{
                                                     formatPrice(
                                                         product.sell_price

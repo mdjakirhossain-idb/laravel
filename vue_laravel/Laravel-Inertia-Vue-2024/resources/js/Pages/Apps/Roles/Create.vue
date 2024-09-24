@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Add New Role - Aplikasi Kasir</title>
+        <title>Add New Role - Point Of Sale</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">

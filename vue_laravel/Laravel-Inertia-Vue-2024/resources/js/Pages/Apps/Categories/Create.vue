@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Add New Category - Aplikasi Kasir</title>
+        <title>Add New Category - Point Of Sale</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">

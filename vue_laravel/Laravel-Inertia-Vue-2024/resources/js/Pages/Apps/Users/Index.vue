@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Users - Aplikasi Kasir</title>
+        <title>Users - Point Of Sale</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">

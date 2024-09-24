@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Edit Category - BookStore</title>
+        <title>Edit Category - Point Of Sale</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">

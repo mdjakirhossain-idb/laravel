@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Dashboard - Aplikasi Kasir</title>
+        <title>Dashboard - Point Of Sale</title>
     </Head>
 
     <main class="c-main">
