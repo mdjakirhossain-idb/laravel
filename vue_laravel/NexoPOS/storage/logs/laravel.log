@@ -1,0 +1,422 @@
+[2024-09-23 09:32:14] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nexopos.nexopos_coupons' doesn't exist (Connection: mysql, SQL: select * from `nexopos_coupons`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nexopos.nexopos_coupons' doesn't exist (Connection: mysql, SQL: select * from `nexopos_coupons`) at D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:825)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(398): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3130): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3115): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3703): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3114): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(759): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(741): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#8 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->get()
+#9 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2367): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'get', Array)
+#10 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2379): Illuminate\\Database\\Eloquent\\Model->__call('get', Array)
+#11 D:\\xampp\\htdocs\\vue\\NexoPOS\\database\\factories\\RewardSystemFactory.php(21): Illuminate\\Database\\Eloquent\\Model::__callStatic('get', Array)
+#12 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(454): Database\\Factories\\RewardSystemFactory->definition()
+#13 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(433): Illuminate\\Database\\Eloquent\\Factories\\Factory->getRawAttributes(NULL)
+#14 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(417): Illuminate\\Database\\Eloquent\\Factories\\Factory->getExpandedAttributes(NULL)
+#15 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(149): Illuminate\\Database\\Eloquent\\Factories\\Factory->Illuminate\\Database\\Eloquent\\Factories\\{closure}()
+#16 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(416): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#17 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(400): Illuminate\\Database\\Eloquent\\Factories\\Factory->makeInstance(NULL)
+#18 [internal function]: Illuminate\\Database\\Eloquent\\Factories\\Factory->Illuminate\\Database\\Eloquent\\Factories\\{closure}(1)
+#19 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(399): array_map(Object(Closure), Array)
+#20 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(284): Illuminate\\Database\\Eloquent\\Factories\\Factory->make(Array, NULL)
+#21 D:\\xampp\\htdocs\\vue\\NexoPOS\\database\\seeders\\RewardSystemSeeder.php(21): Illuminate\\Database\\Eloquent\\Factories\\Factory->create()
+#22 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\RewardSystemSeeder->run()
+#23 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#28 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#29 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(61): Illuminate\\Database\\Seeder->__invoke(Array)
+#30 D:\\xampp\\htdocs\\vue\\NexoPOS\\database\\seeders\\DatabaseSeeder.php(16): Illuminate\\Database\\Seeder->call('Database\\\\Seeder...')
+#31 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\DatabaseSeeder->run()
+#32 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#33 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#34 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#35 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#36 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#37 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#38 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(70): Illuminate\\Database\\Seeder->__invoke()
+#39 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#40 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(69): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#41 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#42 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#43 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#44 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#45 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#46 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(213): Illuminate\\Container\\Container->call(Array)
+#47 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#48 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(182): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#49 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\symfony\\console\\Application.php(1047): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#50 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\symfony\\console\\Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#51 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#52 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#53 D:\\xampp\\htdocs\\vue\\NexoPOS\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#54 {main}
+
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nexopos.nexopos_coupons' doesn't exist at D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:407)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(407): PDO->prepare('select * from `...')
+#1 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(812): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#2 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(398): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#4 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3130): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#5 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3115): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3703): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3114): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#8 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(759): Illuminate\\Database\\Query\\Builder->get(Array)
+#9 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(741): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#10 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->get()
+#11 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2367): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'get', Array)
+#12 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2379): Illuminate\\Database\\Eloquent\\Model->__call('get', Array)
+#13 D:\\xampp\\htdocs\\vue\\NexoPOS\\database\\factories\\RewardSystemFactory.php(21): Illuminate\\Database\\Eloquent\\Model::__callStatic('get', Array)
+#14 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(454): Database\\Factories\\RewardSystemFactory->definition()
+#15 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(433): Illuminate\\Database\\Eloquent\\Factories\\Factory->getRawAttributes(NULL)
+#16 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(417): Illuminate\\Database\\Eloquent\\Factories\\Factory->getExpandedAttributes(NULL)
+#17 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(149): Illuminate\\Database\\Eloquent\\Factories\\Factory->Illuminate\\Database\\Eloquent\\Factories\\{closure}()
+#18 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(416): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#19 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(400): Illuminate\\Database\\Eloquent\\Factories\\Factory->makeInstance(NULL)
+#20 [internal function]: Illuminate\\Database\\Eloquent\\Factories\\Factory->Illuminate\\Database\\Eloquent\\Factories\\{closure}(1)
+#21 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(399): array_map(Object(Closure), Array)
+#22 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\Factory.php(284): Illuminate\\Database\\Eloquent\\Factories\\Factory->make(Array, NULL)
+#23 D:\\xampp\\htdocs\\vue\\NexoPOS\\database\\seeders\\RewardSystemSeeder.php(21): Illuminate\\Database\\Eloquent\\Factories\\Factory->create()
+#24 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\RewardSystemSeeder->run()
+#25 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#27 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#28 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#29 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#30 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#31 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(61): Illuminate\\Database\\Seeder->__invoke(Array)
+#32 D:\\xampp\\htdocs\\vue\\NexoPOS\\database\\seeders\\DatabaseSeeder.php(16): Illuminate\\Database\\Seeder->call('Database\\\\Seeder...')
+#33 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\DatabaseSeeder->run()
+#34 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#35 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#36 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#37 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#38 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#39 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#40 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(70): Illuminate\\Database\\Seeder->__invoke()
+#41 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#42 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(69): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#43 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#44 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#45 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#46 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#47 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#48 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(213): Illuminate\\Container\\Container->call(Array)
+#49 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#50 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(182): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#51 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\symfony\\console\\Application.php(1047): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#52 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\symfony\\console\\Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#53 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#54 D:\\xampp\\htdocs\\vue\\NexoPOS\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#55 D:\\xampp\\htdocs\\vue\\NexoPOS\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#56 {main}
+"} 
+[2024-09-23 09:36:19] local.INFO: Broadcasting [App\Events\NotificationCreatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 1,
+        "user_id": 87,
+        "identifier": "ns.notifications.workers-disabled",
+        "title": "Task Scheduling Disabled",
+        "description": "NexoPOS is unable to schedule background tasks. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:36:19"
+    },
+    "socket": null
+}  
+[2024-09-23 09:36:19] local.INFO: Broadcasting [App\Events\NotificationCreatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 2,
+        "user_id": 87,
+        "identifier": "ns.notifications.cron-disabled",
+        "title": "Cron Disabled",
+        "description": "Cron jobs aren't configured correctly on NexoPOS. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:36:19"
+    },
+    "socket": null
+}  
+[2024-09-23 09:36:19] local.INFO: Broadcasting [App\Events\NotificationCreatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 3,
+        "user_id": 87,
+        "identifier": "ns.notifications.symbolic-links-missing",
+        "title": "Symbolic Links Missing",
+        "description": "The Symbolic Links to the public directory is missing. Your medias might be broken and not display.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/broken-media-images?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:36:19"
+    },
+    "socket": null
+}  
+[2024-09-23 09:36:42] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 1,
+        "user_id": 87,
+        "identifier": "ns.notifications.workers-disabled",
+        "title": "Task Scheduling Disabled",
+        "description": "NexoPOS is unable to schedule background tasks. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:36:42"
+    },
+    "socket": null
+}  
+[2024-09-23 09:36:42] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 2,
+        "user_id": 87,
+        "identifier": "ns.notifications.cron-disabled",
+        "title": "Cron Disabled",
+        "description": "Cron jobs aren't configured correctly on NexoPOS. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:36:42"
+    },
+    "socket": null
+}  
+[2024-09-23 09:36:54] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 1,
+        "user_id": 87,
+        "identifier": "ns.notifications.workers-disabled",
+        "title": "Task Scheduling Disabled",
+        "description": "NexoPOS is unable to schedule background tasks. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:36:54"
+    },
+    "socket": null
+}  
+[2024-09-23 09:36:54] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 2,
+        "user_id": 87,
+        "identifier": "ns.notifications.cron-disabled",
+        "title": "Cron Disabled",
+        "description": "Cron jobs aren't configured correctly on NexoPOS. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:36:54"
+    },
+    "socket": null
+}  
+[2024-09-23 09:37:09] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 1,
+        "user_id": 87,
+        "identifier": "ns.notifications.workers-disabled",
+        "title": "Task Scheduling Disabled",
+        "description": "NexoPOS is unable to schedule background tasks. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:37:09"
+    },
+    "socket": null
+}  
+[2024-09-23 09:37:09] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 2,
+        "user_id": 87,
+        "identifier": "ns.notifications.cron-disabled",
+        "title": "Cron Disabled",
+        "description": "Cron jobs aren't configured correctly on NexoPOS. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:37:09"
+    },
+    "socket": null
+}  
+[2024-09-23 09:37:18] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 1,
+        "user_id": 87,
+        "identifier": "ns.notifications.workers-disabled",
+        "title": "Task Scheduling Disabled",
+        "description": "NexoPOS is unable to schedule background tasks. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:37:18"
+    },
+    "socket": null
+}  
+[2024-09-23 09:37:18] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 2,
+        "user_id": 87,
+        "identifier": "ns.notifications.cron-disabled",
+        "title": "Cron Disabled",
+        "description": "Cron jobs aren't configured correctly on NexoPOS. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:37:18"
+    },
+    "socket": null
+}  
+[2024-09-23 09:37:43] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 1,
+        "user_id": 87,
+        "identifier": "ns.notifications.workers-disabled",
+        "title": "Task Scheduling Disabled",
+        "description": "NexoPOS is unable to schedule background tasks. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:37:43"
+    },
+    "socket": null
+}  
+[2024-09-23 09:37:43] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 2,
+        "user_id": 87,
+        "identifier": "ns.notifications.cron-disabled",
+        "title": "Cron Disabled",
+        "description": "Cron jobs aren't configured correctly on NexoPOS. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:37:43"
+    },
+    "socket": null
+}  
+[2024-09-23 09:38:05] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 1,
+        "user_id": 87,
+        "identifier": "ns.notifications.workers-disabled",
+        "title": "Task Scheduling Disabled",
+        "description": "NexoPOS is unable to schedule background tasks. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:38:05"
+    },
+    "socket": null
+}  
+[2024-09-23 09:38:05] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 2,
+        "user_id": 87,
+        "identifier": "ns.notifications.cron-disabled",
+        "title": "Cron Disabled",
+        "description": "Cron jobs aren't configured correctly on NexoPOS. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:38:05"
+    },
+    "socket": null
+}  
+[2024-09-23 09:38:15] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 1,
+        "user_id": 87,
+        "identifier": "ns.notifications.workers-disabled",
+        "title": "Task Scheduling Disabled",
+        "description": "NexoPOS is unable to schedule background tasks. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:38:15"
+    },
+    "socket": null
+}  
+[2024-09-23 09:38:15] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 2,
+        "user_id": 87,
+        "identifier": "ns.notifications.cron-disabled",
+        "title": "Cron Disabled",
+        "description": "Cron jobs aren't configured correctly on NexoPOS. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:38:15"
+    },
+    "socket": null
+}  
+[2024-09-23 09:38:21] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 1,
+        "user_id": 87,
+        "identifier": "ns.notifications.workers-disabled",
+        "title": "Task Scheduling Disabled",
+        "description": "NexoPOS is unable to schedule background tasks. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:38:21"
+    },
+    "socket": null
+}  
+[2024-09-23 09:38:21] local.INFO: Broadcasting [App\Events\NotificationUpdatedEvent] on channels [private-App.User.87] with payload:
+{
+    "notification": {
+        "id": 2,
+        "user_id": 87,
+        "identifier": "ns.notifications.cron-disabled",
+        "title": "Cron Disabled",
+        "description": "Cron jobs aren't configured correctly on NexoPOS. This might restrict necessary features. Click here to learn how to fix it.",
+        "url": "https:\/\/my.nexopos.com\/en\/documentation\/troubleshooting\/workers-or-async-requests-disabled?utm_source=nexopos&utm_campaign=warning&utm_medium=app",
+        "source": "system",
+        "dismissable": 1,
+        "created_at": "2024-09-23 08:36:19",
+        "updated_at": "2024-09-23 08:38:21"
+    },
+    "socket": null
+}  
